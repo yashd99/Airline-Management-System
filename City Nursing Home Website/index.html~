@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title> City Nursing home </title>
+
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<script>
+	function validateForm() {
+	var emailID=document.myform.email.value;
+	atpos=emailID.indexOf("@");
+	dotpos=emailID.indexOf(".");
+ 	if(document.myform.fname.value == "")
+ 	{
+ 		alert("Please enter your name ");
+ 		document.myform.fname.focus();
+ 	
+  	
+    	return false;
+  }
+  if(document.myform.lname.value == "")
+ 	{
+ 		alert("Please enter your name ");
+ 		document.myform.lname.focus();
+ 	
+  	
+    	return false;
+  }
+  if(emailID==""||(atpos < 1||(dotpos - atpos < 2)))
+  {
+  	alert("Please enter correct email Id");
+  	document.myform.emailID.focus();
+ 	return false;
+  }
+}
+	</script>
+
+</head>
+<body>
+
+	<div class="top">
+		<div>
+		 Contact Us +91 96366 20000 / 01 | cnh@hospital.com
+		</div>
+	</div>
+
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> City  </font><font color="#000"> Nursing home</font> </td>
+					<td> <br> <br>
+						<font size="4px">
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT US</a>
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a>
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div style="background-image:url('img/a.jpg');">
+		<p>
+			<br> <br>
+					Health Care Services  <br>
+			<font size="5px"> We Care About Your Health </font>
+		</p>
+		</div>
+	</div>
+
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000"> We are medical center </font> <br> <br>
+
+					<font color="#001" size="5px"> We Have Medicare Plan Options for You! </font> <br> <br>
+
+The spacious Intensive Care Unit (ICU) provides for 11 modern fully maneuverable intensive beds. The ICU at BelleVue Multispecialty Hospital maintains an average patient bed utilization of over 70% throughout the year <br><br>
+
+Each ICU patient is provided a 100 square foot space which allows comfortable area for all the intensive care procedures to be carried out. Each patient bed is supported with Central air, Oxygen supply and bedside suction facility <br><br>
+Individualized modern multi-parameter view and record console is available for each ICU patient and is connected to the Central Observation Monitor System. <br><br>
+<ul>
+<li> Encompassing 10 lakh sq ft of space spread over 17 floors and two basements. Its 'intelligent framework' allows for hospital staff to optimise utilisation of space and resources.
+<li>Accommodates over 750 inpatient beds, allows optimal utilisation of resources and ensures privacy, dignity, comfort, convenience and the best healthcare to every patient. However, the smooth and seamless movement of people & staff is guaranteed.
+<li>City Nursing Home has a total of over 240 independent consulting clinics, with the capacity to handle over 9,000 outpatient consultations every day.
+<li>Two dedicated elevators ensure quick transfer of patients to Operation Rooms and ICUs.
+<li>Movement in the hospital is managed by 30 elevators —the largest elevator bank for any hospital in India capable of transporting 7,500 persons per hour, with different elevators for inpatients, outpatients, staff and catering.
+</ul>
+<br>
+ </td>
+
+
+					<td> </td>
+				</tr>
+
+
+			</table>
+		</div>
+	</div>
+<div class="bottom_up">
+		<div>
+				Make an Appointment
+				<form name="myform" onsubmit="return validateForm()" method="post">
+				<table>
+										
+					<tr>
+						<td width="500px"> </td>
+						<td>	<input type="text" name ="fname" placeholder="First Name">
+						<td> 	<input type="text" name ="lname" placeholder="Last Name">
+					</tr>
+					<tr height="30px">
+						
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td>	<input type="text" name="email" placeholder="Email Id">
+						<td> 	<input type="text" placeholder="Mobile No">
+					</tr>
+					
+					
+					<tr>
+						<td width="500px"> </td>
+						<td colspan="2">	
+						<button> 
+						  <input type="submit" value="Submit">
+						
+						 </button>
+					</tr>
+				</table>
+				</form>
+				
+		</div>
+	</div>
+<div class="nav_down">
+		<div>
+		 &copy; City Nursing home, site designed & developed by Heisenberg
+		</div>
+	</div>
+</body>
